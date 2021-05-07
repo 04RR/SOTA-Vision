@@ -25,7 +25,7 @@ model(x) # (1, 10)
 
 ## 2. TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation (https://arxiv.org/abs/2102.04306)
 
-<img src="./imgs/transunet.png" width="500px"></img>
+<img src="./imgs/transunet.PNG" width="500px"></img>
 
 ```python
 import torch
@@ -47,7 +47,7 @@ model(x) # (2, 128, 128)
 
 ## 3. An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (https://arxiv.org/abs/2010.11929)
 
-<img src="./imgs/vit.png" width="500px"></img>
+<img src="./imgs/vit.PNG" width="500px"></img>
 
 ```python
 import torch
