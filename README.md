@@ -2,7 +2,7 @@
 
 ## 1. MLP-Mixer: An all-MLP Architecture for Vision (https://arxiv.org/abs/2105.01601)
 
-<img src="./imgs/mlp.png" width="500px"></img>
+<img src="./imgs/mlp.PNG" width="500px"></img>
 
 ```python
 import torch
