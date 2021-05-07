@@ -19,7 +19,7 @@ model = MLPMixer(
     channel_dim= 2048
 )
 
-x = torch.randn(1, 3, 256, 256)
+x = torch.randn(1, 3, 128, 128)
 model(x) # (1, 10)
 ```
 
@@ -41,7 +41,7 @@ model = TransUNet(
     linear_dim= 1024
 )
 
-x = torch.randn(1, 3, 256, 256)
+x = torch.randn(1, 3, 128, 128)
 model(x) # (2, 128, 128)
 ```
 
@@ -65,6 +65,6 @@ model = ViT(
     classification= True 
 )
 
-x = torch.randn(1, 3, 256, 256)
+x = torch.randn(1, 3, 128, 128)
 model(x) # (1, 10)
 ```
