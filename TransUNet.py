@@ -146,14 +146,14 @@ class TransUNet(nn.Module):
         patch_dim,
         in_channels=3,
         classes=1,
-        layers=6,
+        blocks=6,
         heads=8,
         linear_dim=1024,
     ):
         super(TransUNet, self).__init__()
 
         self.encoder = TransUNetEncoder(
-            img_dim, patch_dim, in_channels, classes, layers, heads, linear_dim
+            img_dim, patch_dim, in_channels, classes, blocks, heads, linear_dim
         )
 
         self.decoder1 = TransUNetDecoderUnit(1024, 256)
