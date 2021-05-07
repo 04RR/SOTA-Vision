@@ -66,5 +66,5 @@ model = ViT(
 )
 
 x = torch.randn(1, 3, 256, 256)
-model(x) # (2, 128, 128)
+model(x) # (1, 10)
 ```
