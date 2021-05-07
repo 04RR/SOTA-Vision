@@ -10,9 +10,9 @@ class ViT(nn.Module):
         img_dim,
         in_channels=3,
         patch_dim=16,
-        num_classes=10,
+        classes=10,
         dim=512,
-        layers=6,
+        blocks=6,
         heads=4,
         linear_dim=1024,
         classification=True,
@@ -36,9 +36,9 @@ class ViT(nn.Module):
         self.cls_token = nn.Parameter(torch.rand(1, 1, dim))
         self.embedding = nn.Parameter(torch.rand(self.num_tokens + 1, dim))
 
-        self.transformer = TransformerEncoder(dim, linear_dim, layers, heads)
+        self.transformer = TransformerEncoder(dim, linear_dim, blocks, heads)
 
-        self.final = nn.Linear(dim, num_classes)
+        self.final = nn.Linear(dim, classes)
 
     def forward(self, x):
 
