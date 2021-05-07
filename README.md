@@ -29,7 +29,7 @@ model(x) # (1, 10)
 
 ```python
 import torch
-from MLP_Mixer import MLPMixer
+from TransUNet import TransUNet
 
 model = TransUNet(
     img_dim= 128,
