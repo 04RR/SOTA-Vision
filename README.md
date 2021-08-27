@@ -68,3 +68,22 @@ model = ViT(
 x = torch.randn(1, 3, 128, 128)
 model(x) # (1, 10)
 ```
+
+## 4. Fastformer: Additive Attention Can Be All You Need (https://arxiv.org/abs/2108.09084)
+
+<img src="./imgs/fastformer.PNG" width="500px"></img>
+
+```python
+import torch
+from fastformer import FastFormer
+
+model = FastFormer(
+    in_dims= 256, 
+    token_dim= 512, 
+    num_heads= 8
+)
+
+x = torch.randn(1, 128, 256)
+model(x) # (1, 128, 512)
+```
+
