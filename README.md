@@ -87,3 +87,17 @@ x = torch.randn(1, 128, 256)
 model(x) # (1, 128, 512)
 ```
 
+## 5. Single Image Super-Resolution via a Holistic Attention Network (https://arxiv.org/abs/2008.08767)
+
+<img src="./imgs/han.PNG" width="500px"></img>
+
+```python
+import torch
+from han import HAN
+
+model = HAN(in_channels= 3)
+
+x = torch.randn(1, 3, 256, 256)
+model(x) # (1, 3, 512, 512)
+```
+
